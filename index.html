@@ -74,10 +74,10 @@
 
     const dataObj = reactive({
       url: "",
-      api: "http://127.0.0.1:8000/examine/",
+      api: "http://127.0.0.1:8000/",
       result: "",
       percentage: 0.0,
-      mColor: "primary"
+      mColor: ""
     });
 
     const app = createApp({
@@ -87,7 +87,7 @@
       methods: {
         getData() {
           console.log("get data");
-          fetch(dataObj["api"] + escape(dataObj["url"]))
+          fetch(dataObj["api"] + "examine/" + escape(dataObj["url"]))
             .then(
               (response) => {
                 return response.json();
