@@ -26,9 +26,9 @@
           <div class="input-field first-wrap">
             <input id="search" type="text" placeholder="Test URL here!" v-model="url" />
           </div>
-          <div class="input-field first-wrap">
+          <!-- <div class="input-field first-wrap">
             <input id="search" type="text" placeholder="API" v-model="api" />
-          </div>
+          </div> -->
           <div class="input-field third-wrap">
             <button class="btn-search" type="button" v-on:click="getData()">Test</button>
           </div>
@@ -74,7 +74,7 @@
 
     const dataObj = reactive({
       url: "",
-      api: "http://127.0.0.1:8000/",
+      api: "http://140.113.216.90:8000/",
       result: "",
       percentage: 0.0,
       mColor: ""
