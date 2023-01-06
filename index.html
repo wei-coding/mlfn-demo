@@ -97,7 +97,7 @@
               (jsonData) => {
                 console.log(jsonData);
                 var p = jsonData["phishing_percentage"] * 100;
-                console.log(p);
+                // console.log(p);
                 dataObj["percentage"] = p;
                 if (p > 50) {
                   dataObj["result"] = "Phishing";
@@ -106,11 +106,11 @@
                   dataObj["result"] = "Legitimate";
                   dataObj["mColor"] = "blue";
                 }
-                console.log(dataObj);
+                // console.log(dataObj);
               }
             ).catch(
               (error) => {
-                console.log(error);
+                // console.log(error);
               }
             )
         }
