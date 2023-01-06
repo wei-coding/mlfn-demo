@@ -12,13 +12,7 @@
 </head>
 
 <body>
-  <script type="importmap">
-    {
-      "imports": {
-        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-      }
-    }
-  </script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <div id="app">
     <div class="s131">
       <form>
@@ -70,7 +64,7 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script type="module">
-    import { createApp, reactive } from 'vue';
+    const { createApp, reactive } = Vue;
 
     const dataObj = reactive({
       url: "",
